@@ -2,36 +2,22 @@
 <html>
 <head>
   <title>WEB1 - HTML</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="colors.js"></script>
 </head>
 <body>
 	<div id="dayNight">
-	  <input type="button" value="day" onclick="
-		  document.querySelector('body').style.background='white';
-		  document.querySelector('body').style.color='black';
-		  document.querySelector('a').style.color='black';
-		  document.querySelector('#linkHTML').style.color='black';
-		  document.querySelector('#linkCSS').style.color='black';
-		  document.querySelector('#linkJavaScript').style.color='black';
-		  document.querySelector('#htmlPageLink').style.color='black';
-		 ">
-		 <input type="button" value="night" onclick="
-		  document.querySelector('body').style.background='#222423';
-		  document.querySelector('body').style.color='white';
-		  document.querySelector('a').style.color='white';
-		  document.querySelector('#linkHTML').style.color='white';
-		  document.querySelector('#linkCSS').style.color='white';
-		  document.querySelector('#linkJavaScript').style.color='white';
-		  document.querySelector('#htmlPageLink').style.color='white';
-		 ">
+	  <input id="night_day_button" type="button" value="night" 
+	  	onclick="dayNightHandler(this)"/>
 	 </div>
   <h1><a href="index.html">WEB</a></h1>
   <div id="grid">
 	  <ol>
-	    <li><a href="1.html"><span id="linkHTML">HTML</span></a></li>
-	    <li><a href="2.html"><span id="linkCSS">CSS</span></a></li>
-	    <li><a href="3.html"><span id="linkJavaScript">JavaScript</span></a></li>
+	    <li><a href="1.html">HTML</a></li>
+	    <li><a href="2.html">CSS</a></li>
+	    <li><a href="3.html">JavaScript</a></li>
 	  </ol>
 	  <div id="article">
 	  <h2>HTML</h2>
@@ -46,7 +32,7 @@
 	  	HTML documents from a web server or from local storage and render them into multimedia 
 	  	web pages. HTML describes the structure of a web page semantically and originally 
 	  	included cues for the appearance of the document. 
-	  	<img src="coding.jpg" width="440px" style="margin-top: 20px; display: block">
+	  	<img src="1_html_img1.jpg" width="440px" style="margin-top: 20px; display: block">
 	  </p>
 	  <p style="margin-top:25px;">HTML elements are the building blocks of HTML pages. 
 		  With HTML constructs, images and other objects, such as interactive forms, may be 
@@ -55,6 +41,8 @@
 		  quotes and other items. HTML elements are delineated by tags, written using angle 
 		  brackets.
 	  </p>
+	  <input id="night_day_button2" type="button" value="night" 
+	  	onclick="dayNightHandler(this)"/>
 		</div>
 	</div>
 </body>

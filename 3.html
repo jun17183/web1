@@ -2,34 +2,22 @@
 <html>
 <head>
   <title>WEB1 - JavaScript</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="colors.js"></script>
 </head>
 <body>
 	<div id="dayNight">
-	  <input type="button" value="day" onclick="
-		  document.querySelector('body').style.background='white';
-		  document.querySelector('body').style.color='black';
-		  document.querySelector('a').style.color='black';
-		  document.querySelector('#linkHTML').style.color='black';
-		  document.querySelector('#linkCSS').style.color='black';
-		  document.querySelector('#linkJavaScript').style.color='black';
-		 ">
-		 <input type="button" value="night" onclick="
-		  document.querySelector('body').style.background='#222423';
-		  document.querySelector('body').style.color='white';
-		  document.querySelector('a').style.color='white';
-		  document.querySelector('#linkHTML').style.color='white';
-		  document.querySelector('#linkCSS').style.color='white';
-		  document.querySelector('#linkJavaScript').style.color='white';
-		 ">
-	 </div>
+	  <input id="night_day_button" type="button" value="night" 
+	  	onclick="dayNightHandler(this)"/>
+	</div>
   <h1><a href="index.html">WEB</a></h1>
   <div id="grid">
 	  <ol>
-	    <li><a href="1.html"><span id="linkHTML">HTML</span></a></li>
-	    <li><a href="2.html"><span id="linkCSS">CSS</span></a></li>
-	    <li><a href="3.html"><span id="linkJavaScript">JavaScript</span></a></li>
+	    <li><a href="1.html">HTML</a></li>
+	    <li><a href="2.html">CSS</a></li>
+	    <li><a href="3.html">JavaScript</a></li>
 	  </ol>
 	  <div id="article">
 	  	<h2>JavaScript</h2>
@@ -45,6 +33,8 @@
 		    with some engines not supporting the spec fully, and with many engines supporting 
 		    additional features beyond ECMA.
 		  </p>
+		  <input id="night_day_button2" type="button" value="night" 
+		  	onclick="dayNightHandler(this)"/>
 	  </div>
   </div>
 </body>

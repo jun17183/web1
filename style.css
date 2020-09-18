@@ -29,6 +29,7 @@ ol{
 #grid #article{
   padding-left:25px;
   padding-right:30px;
+  padding-bottom:10px;
 }
 @media(max-width:800px){
   #grid{
@@ -45,4 +46,9 @@ ol{
 	position: absolute;
 	right: 7px;
 	top: 5px;
+}
+#night_day_button, #night_day_button2 {
+	width: 60px;
+	height: 30px;
+	font-size: 14px;
 }
