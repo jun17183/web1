@@ -31,15 +31,26 @@ ol{
   padding-right:30px;
   padding-bottom:10px;
 }
-@media(max-width:800px){
+@media(max-width:800px) {
   #grid{
     display: block;
   }
-  ol{
+  ol {
     border-right:none;
+    display: inline-block;
+    width: 345px;
+  }
+  ol li {
+  	list-style-type: none;
+  	float: left;
+  	padding-right: 35px;
   }
   h1 {
     border-bottom:none;
+    border-bottom: 1px solid gray;
+  }
+  #article {
+    border-top: 1px solid gray;
   }
 }
 #dayNight {
