@@ -34,6 +34,7 @@ ol{
 @media(max-width:800px) {
   #grid{
     display: block;
+    padding-bottom: 30px;
   }
   ol {
     border-right:none;
@@ -51,6 +52,9 @@ ol{
   }
   #article {
     border-top: 1px solid gray;
+  }
+  #article img {
+  	width: 360px;
   }
 }
 #dayNight {
